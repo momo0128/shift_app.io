@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <mata charset="utf-8">
+  <title>シフト入力</title>
+</head>
+<script>
+function show_alert() {
+  var txt = document.getElementById("tableid");
+  alert("input is " + txt.innerText);
+}
+</script>
+<body>
+
+<form action="/result" method="post">
+<label for="start">日付:</label>
+ <input type="date" id="inputform" placeholder="日付" name="work-day"  min="2023-8-01" max="2023-8-31" />
+
+<label for="work-start">出勤:</label>
+  <input type="time" id="inputform" placeholder="出勤" name="work-start"/>
+
+
+  <label for="work-end">退勤:</label>
+  <input type="time" id="inputform" placeholder="退勤" name="work-end"/>
+
+  <label for="break-start">休憩開始:</label>
+  <input type="time" id="inputform" placeholder="休憩" name="break-start"/>
+
+  <label for="break-end">休憩終了:</label>
+  <input type="time" id="inputform" placeholder="休憩" name="break-end"/>
+
+
+  <button type="submit">送信</button>
+  <button type="button" onclick="show_alert()">ALERT</button>
+</form>
+
+<table id="tableid">
+  <%= @messages %>
+</table>
+
+
+<img src="cat.png">
+
+</body>
+</html>

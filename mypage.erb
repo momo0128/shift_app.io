@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <mata charset="utf-8">
+  <title>入力</title>
+</head>
+<script>
+function show_alert() {
+  var txt = document.getElementById("tableid");
+  alert("input is " + txt.innerText);
+}
+</script>
+<body>
+
+<form action="/result" method="post">
+<label for="salary">時給:</label>
+ <input type="input type="text" id="inputform" placeholder="時給" name="salary"/>
+
+<label for="work-start">勤務地:</label>
+  <input type="name" id="inputform" placeholder="勤務地" name="work-place"/>
+
+  <button type="submit">送信</button>
+  
+</form>
+
+<table id="tableid">
+  <%= @information %>
+</table>
+
+
+<img src="cat.png">
+
+</body>
+</html>

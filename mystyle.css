@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  width: 90vw;
+  height: 90vh;
+  background-color:rgb(248, 207, 228);
+}
+
+
+/* 大きい見出し */
+.title      {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #474747;
+  background: rgba(252, 99, 236, 0.359);/*背景色*/
+  border-left: double 7px #faf5f9;/*左線*/
+  border-right: double 7px #f8f5f7;/*右線*/
+  
+} 
+
+.title p {
+  margin: 0; 
+  padding: 0;
+}
+
+h1     {
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+h2      {
+  text-align: center;
+  font-size: 1.8rem;
+} 
+  
+/* URLの場所 */
+li      {
+  color: whitesmoke;
+}
+
+/* 説明の文字 */
+p       {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #2c2c2f;
+  background:rgba(249, 181, 227, 0.8);/*背景色*/
+} 
+
+/*メニュー部分*/
+details summary{
+  /*アニメーション*/
+  transition: 0.5s;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background:rgba(249, 181, 227, 0.359);
+  border-left: solid 6px #fca4e6;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+  /*閉じたときの余白*/
+  padding:1% 2%;
+  font-size: 1.5rem;
+}
+/*メニュー部分 開いたとき*/
+details[open] summary{
+  /*開いたときの色*/
+  background:rgba(250, 75, 235, 0.359);
+  /*開いたときの余白*/
+  padding-left:4%;
+}
+/*折りたたむ部分*/
+details p{
+  margin: 2% 4%;
+}
+details{
+  width:50%;
+}
+
+.menu{
+      /*背景画像の設定*/
+      background: url(https://uploads-ssl.webflow.com/603c87adb15be3cb0b3ed9b5/627a3cc44fa0d4208d6128ab_95.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position:50% 50%;
+      background-size:contain;
+}
+
